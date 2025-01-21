@@ -47,3 +47,4 @@ env/
 # Logs and databases
 *.log
 *.sqlite
+cline_docs/
