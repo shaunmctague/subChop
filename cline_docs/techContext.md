@@ -58,15 +58,40 @@ sub_chop/
 
 2. Environment Setup:
    ```bash
-   # Create virtual environment
-   python -m venv venv
-   source venv/bin/activate  # Unix
-   # or
-   .\venv\Scripts\activate  # Windows
+   # Unix/macOS
+   ./setup.sh
 
-   # Install dependencies
-   pip install PySide6
+   # Windows
+   setup.bat
    ```
+
+   The setup scripts will:
+   - Create a Python virtual environment
+   - Activate the environment
+   - Install all required dependencies
+   - Check for FFmpeg installation
+   
+   To manually activate the virtual environment later:
+   ```bash
+   # Unix/macOS
+   source venv/bin/activate
+
+   # Windows
+   venv\Scripts\activate.bat
+   ```
+
+3. Running the Application:
+   ```bash
+   # Unix/macOS
+   ./start.sh
+
+   # Windows
+   start.bat
+   ```
+
+   The start scripts will:
+   - Activate the virtual environment if not already active
+   - Run the application
 
 2. FFmpeg Installation:
    - macOS: `brew install ffmpeg`
